@@ -17,6 +17,8 @@ Finally, having a second monitor is advised, since that will allow you to keep y
 We will run this course through our cloud platform, MorphoCloud On Demand. Once you obtain the necessary accounts, to go https://instances.morpho.cloud, read the document about how MorphoCloud operates, and then use the provided link to request an instance. It is important that you do this **at least 24h before the course starts** to give enough time that your instance request to be approved, setup properly and for you to have a chance to test it. 
 For ideal performance, we suggest using a wired ethernet connection at your university's campus. A dedicated wifi network (like your home) should also work fine. Please avoid public wifi access points due to unpredictable network performance.  
 
+**Note for SlicerMorph 101 attendees:** If you have attended SlicerMorph101 couple months ago, you might still have an instance on MorphoCloud. In that case you do not need to create a new instance. However, that instance needs to be updated with the latest image and datasets for this course. For that, please email me the issue number and URL from the issue page, again at 24h before the course begins on 10th. 
+
 Some important points about MorphoCloud On Demand sessions:
 * Always keep your data in the **MyData** storage volume. This is your persistent storage, data stored elsewhere may get deleted.
 * You will have to extend your session approximately every 3.5h after your instance becomes online. Simply click `YES` when the popup window shows up. You can also renew your session for 4h at anytime by clicking the shortcut on your desktop.
@@ -47,6 +49,8 @@ This is a one-time setup, unless the instance has to be deleted and re-created. 
 `/media/share/MorphoCloudCephShare`
 
 and **it will be read-only**. You should continue saving your data into the your **MyData** folder (located in `/media/volume/MyData`)
+
+**Note for SlicerMorph 101 attendees:**: These steps should not be necessary for you, as you are likely mapped this drive. Please first check whether `/media/share/MorphoCloudCephShare` is present. If not, follow the instructions to map them. 
 
 #### Data transfer between your local computer and remote instance
 **Uploading to remote:** If your files are small (<100MB) and you have a stable connection, just dragging and dropping individual files to the browser window. Those files will be saved under your **MyData** volume, which is located at `/media/volumes/MyData/`. If your data is already on the cloud (e.g., MorphoSource, dropbox, google drive, etc), the fastest way is to use the Firefox browser built into the instance and directly download them to your remote session. Just remember to copy them to your `MyData`. </br>
