@@ -1,6 +1,9 @@
 # SlicerMorph102
 ## Introduction to 3D Morphometrics with SlicerMorph
 
+## Course Evaluation: please go to  https://forms.gle/cK3stUy8XigeXJTb9 to fill the course evaluation form. 
+
+
 ### Course Prerequisites
 
 If you do not already have them, please obtain accounts at:
