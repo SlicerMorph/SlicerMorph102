@@ -1,7 +1,7 @@
 # SlicerMorph102
 ## Introduction to 3D Morphometrics with SlicerMorph
 
-## Course Evaluation: please go to  https://forms.gle/cK3stUy8XigeXJTb9 to fill the course evaluation form. 
+<!-- ## Course Evaluation: please go to  https://forms.gle/cK3stUy8XigeXJTb9 to fill the course evaluation form. -->
 
 
 ### Course Prerequisites
@@ -12,31 +12,40 @@ If you do not already have them, please obtain accounts at:
   
 GitHub and ORCID are mandatory to use MorphoCloud. 
   
-Also you will **need a 3-button mouse (cannot emphasize this enough)** to operate 3D Slicer (or any other 3D software) effectively. Optionally, [install the latest stable version (v5.8) of Slicer.](https://download.slicer.org) on your own computer as a backup, in case you have issues with cloud connections. 
+Also you will **need a 3-button mouse (cannot emphasize this enough)** to operate 3D Slicer (or any other 3D software) effectively. Optionally, [install the latest preview version (v5.9) of Slicer.](https://download.slicer.org) on your own computer as a backup, in case you have issues with cloud connections. 
 
 Finally, having a second monitor is advised, since that will allow you to keep your zoom and cloud sessions on separate screens. 
 
 ### MorphoCloud On Demand
-We will run this course through our cloud platform, MorphoCloud On Demand. Once you obtain the necessary accounts, to go https://instances.morpho.cloud, read the document about how MorphoCloud operates, and then use the provided link to request an instance. It is important that you do this **at least 24h before the course starts** to give enough time that your instance request to be approved, setup properly and for you to have a chance to test it. 
-For ideal performance, we suggest using a wired ethernet connection at your university's campus. A dedicated wifi network (like your home) should also work fine. Please avoid public wifi access points due to unpredictable network performance.  
+You should have received an email from me with your access credentials to your MorphoCloud On Demand instance. We will use a special version of our regular instances that will allow us to keep all the instances online through out the course. There is no need to shelve or unshelve these instances, or extend the session. They will be available 24/7 throughout the course. These instances will be deleted promptly after the course. Should you like to continue using the MorphoCloud (which we hope you do), you can request a new instance at https://instance.morpho.cloud
 
 Some important points about MorphoCloud On Demand sessions:
-* Always keep your data in the **MyData** storage volume. This is your persistent storage, data stored elsewhere may get deleted. If you need to navigate to MyData through file browser, it is mapped as **/media/volume/MyData**.
-* You will have to extend your session approximately every 3.5h after your instance becomes online. Simply click `YES` when the popup window shows up. You can also renew your session for 4h at anytime by clicking the **Extend Instance Session** shortcut on your desktop.
-* Because the **instances automatically shelve themselves after 4h** (unless you extend it), **the next morning you will find your instance is offline**. Go to your specific issues page (direct link is in the email sent to you by MorphoCloud earlier), and type <br> ```/unshelve``` **to make your instance online again**. Based on the load, it may take anywhere from 2-20 minutes for your instance to become online. So make sure you do this before we start the course. Note that **all MorphoCloud commands are case-sensitive**, please make sure to type lower-case. 
 * Use the `CTRL(CMD in Mac) + ALT + SHIFT` combination to make the cloud connection side window visible (or to make it disappear, if visible).
 * For best user experience, switch to full screen mode in your browser window (not advisable if you do not have a second monitor, as you won't be able to see the zoom window).
 
 #### MorphoCloud Desktop
+- **A:** Side toolbar that gets activated by pressing the `CTRL (or CMD)` +
+  `ALT` + `SHIFT` keys. It allows copy/paste into the remote session, browse and
+  download files on the remote drive and adjust screen zoom levels (cut from the
+  screenshot).
+- **B:** Shortcuts to commonly used applications and to **MyData** storage
+  volume.
 
-**A:** Shortcuts to commonly used tools and applications. From left to right, minimize/maximize open applications, 3D Slicer, Terminal (aka shell console) window, File Browser, Firefox web browser, Application Search, File Browser. </br>
-**B:** Right mouse clicking anywhere on desktop brings this menu, which lists all the applications and settings. </br>
-**C:** Shortcut to your persistent storage volume, **MyData**. The actual folder is /media/volume/MyData. </br>
-**D:** Side toolbar that gets activated by pressing the `CTRL (or CMD)` + `ALT` + `SHIFT` keys. It allows copy/paste into the remote session, browse and download files on the remote drive and adjust screen zoom levels (cut from the screenshot). </br>
-<img src="https://github.com/SlicerMorph/SlicerMorph101/blob/main/MCI_Desktop.png" width=800>
+- **C:** Displays list of available applications (searchable)
+
+- **D:** Right mouse clicking anywhere on desktop brings this menu, including
+  changing screen resolution (Display settings).
+
+- **E:** Click on this icon anytime to extend your session for additional 4
+  hours.
+
+<p align="center">
+  <img src="https://github.com/MorphoCloud/MorphoCloudInstances/blob/main/MCI_Desktop.png" />
+</p>
 
 #### Mapping the Sample Data Drive
-To be able to access the drive with the preloaded workshop data, you need to execute this command in a terminal window:
+Remember the course sample data is available under **/media/shares/MorphoCloudCephShare/SlicerMorph102**</br>
+This path should already mapped to your instance, however, if any reason it is not there, you can put this command in a terminal window. 
 
 ```
 curl https://jetstream2.exosphere.app/exosphere/assets/scripts/mount_ceph.py | sudo python3 - mount \
@@ -48,10 +57,6 @@ curl https://jetstream2.exosphere.app/exosphere/assets/scripts/mount_ceph.py | s
 This is a one-time setup, unless the instance has to be deleted and re-created. Share will be mapped to:
 
 `/media/share/MorphoCloudCephShare`
-
-and **it will be read-only**. You should continue saving your data into the your **MyData** folder (located in `/media/volume/MyData`)
-
-**Note for SlicerMorph 101 attendees:**: These steps should not be necessary for you, as you are likely mapped this drive. Please first check whether `/media/share/MorphoCloudCephShare` is present. If not, follow the instructions to map them. 
 
 #### Data transfer between your local computer and remote instance
 **Uploading to remote:** If your files are small (<100MB) and you have a stable connection, just dragging and dropping individual files to the browser window. Those files will be saved under your **MyData** volume, which is located at `/media/volumes/MyData/`. If your data is already on the cloud (e.g., MorphoSource, dropbox, google drive, etc), the fastest way is to use the Firefox browser built into the instance and directly download them to your remote session. Just remember to copy them to your `MyData`. </br>
