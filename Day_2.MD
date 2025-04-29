@@ -4,8 +4,8 @@
 * PlaceLMGrid
 * MergeMarkups 
 * How to transfer them (project via TPS, or image/model registration)
-* ALPACA
 * PseudoLMGenerator 
+* ALPACA
 * Solidying models (SurfaceWrapSolidify)
 
 
