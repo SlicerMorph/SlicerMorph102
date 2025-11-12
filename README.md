@@ -12,41 +12,39 @@ If you do not already have them, please obtain accounts at:
   
 GitHub and ORCID are mandatory to use MorphoCloud. 
   
-Also you will **need a 3-button mouse (cannot emphasize this enough)** to operate 3D Slicer (or any other 3D software) effectively. Optionally, [install the latest preview version (v5.9) of Slicer.](https://download.slicer.org) on your own computer as a backup, in case you have issues with cloud connections. 
+Also you will **need a 3-button mouse (cannot emphasize this enough)** to operate 3D Slicer (or any other 3D software) effectively. Optionally, [install the latest stable version (v5.10.0) of Slicer.](https://download.slicer.org) on your own computer as a backup, in case you have issues with cloud connections. 
 
 Finally, having a second monitor is advised, since that will allow you to keep your zoom and cloud sessions on separate screens. 
 
 ### MorphoCloud On Demand
-You should have received an email from me with your access credentials to your MorphoCloud On Demand instance. We will use a special version of our regular instances that will allow us to keep all the instances online through out the course. There is no need to shelve or unshelve these instances, or extend the session. They will be available 24/7 throughout the course. These instances will be deleted promptly after the course. Should you like to continue using the MorphoCloud (which we hope you do), you can request a new instance at https://instance.morpho.cloud
+We will run this course through our cloud platform, MorphoCloud (MC) On Demand. Please read more about MorphoCloud instances at https://github.com/SlicerMorph/Tutorials/blob/main/MorphoCloud/README.md. For ideal performance, we suggest using a wired ethernet connection at your university's campus. A dedicated wifi network (like your home) should also work fine. Try to avoid public wifi access points due to unpredictable network performance. I also advise setting TurboVNC client on your computer for better performance, please read option #2 under https://github.com/SlicerMorph/Tutorials/blob/main/MorphoCloud/README.md#you-have-two-options-to-connect-to-gui. 
 
-Some important points about MorphoCloud On Demand sessions:
-* Use the `CTRL(CMD in Mac) + ALT + SHIFT` combination to make the cloud connection side window visible (or to make it disappear, if visible).
+Your MC instances are configured to be available 7/24 throughout the course. They will be **taken offline on Friday night following the course and be deleted**. So if you have anything important make sure you download them at the end of the course. After the course, if you are interested in continuing to use the MorphoCloud Instances, you can follow the instructions at https://morphocloud.org
+
+### Some important points about MorphoCloud On Demand sessions:
+* Always keep your data in the **MyData** storage volume. This is your persistent storage, data stored elsewhere may get deleted.
+* While using the Guacamole (the web browser connection) Use the `CTRL(CMD in Mac) + ALT + SHIFT` combination to make the cloud connection side window visible (or to make it disappear, if visible). This is where you can transfer file to and from cloud.
+* Apart from transfering files, we highly encourage you to install and use the TurboVNC software to connect to MC. Read more about your connection options at: https://github.com/SlicerMorph/Tutorials/blob/main/MorphoCloud/README.md#you-have-two-options-to-connect-to-gui
 * For best user experience, switch to full screen mode in your browser window (not advisable if you do not have a second monitor, as you won't be able to see the zoom window).
 
 #### MorphoCloud Desktop
+
+<img src="https://github.com/MorphoCloud/MorphoCloudInstances/blob/main/MCI_Desktop.png" width=1000>
+
 - **A:** Side toolbar that gets activated by pressing the `CTRL (or CMD)` +
   `ALT` + `SHIFT` keys. It allows copy/paste into the remote session, browse and
-  download files on the remote drive and adjust screen zoom levels (cut from the
-  screenshot).
+  download files on the remote drive (only available if you are using web browser to connect to MC).
 - **B:** Shortcuts to commonly used applications and to **MyData** storage
   volume.
-
 - **C:** Displays list of available applications (searchable)
-
 - **D:** Right mouse clicking anywhere on desktop brings this menu, including
   changing screen resolution (Display settings).
-
 - **E:** Click on this icon anytime to extend your session for additional 4
-  hours.
-
-<p align="center">
-  <img src="https://github.com/MorphoCloud/MorphoCloudInstances/blob/main/MCI_Desktop.png" />
-</p>
+  hours (not necessary for the course).
 
 #### Mapping the Sample Data Drive
 Remember the course sample data is available under **/media/shares/MorphoCloudCephShare/SlicerMorph102**</br>
-This path should already mapped to your instance, however, if any reason it is not there, you can put this command in a terminal window. 
-
+You need to run the command below (once) to map this path to your instance.
 ```
 curl https://jetstream2.exosphere.app/exosphere/assets/scripts/mount_ceph.py | sudo python3 - mount \
   --access-rule-name="MorphoCloudCephShare-ro" \
