@@ -7,3 +7,6 @@
 * Morphometrics presentation
 * [Generalized Procrustes Analysis - Tutorial 1:](https://github.com/SlicerMorph/Tutorials/tree/main/GPA_1)
 * [GPA - Tutorial 2: Visualizations](https://github.com/SlicerMorph/Tutorials/tree/main/GPA_2)
+
+
+[**Class Exercise:**](https://github.com/SlicerMorph/SlicerMorph102/blob/main/GroupExercise.MD)
