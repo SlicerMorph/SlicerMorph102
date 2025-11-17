@@ -24,7 +24,7 @@ Your MC instances are configured to be available 7/24 throughout the course. The
 ### Some important points about MorphoCloud On Demand sessions:
 * Always keep your data in the **MyData** storage volume. This is your persistent storage, data stored elsewhere may get deleted.
 * While using the Guacamole (the web browser connection) Use the `CTRL(CMD in Mac) + ALT + SHIFT` combination to make the cloud connection side window visible (or to make it disappear, if visible). This is where you can transfer file to and from cloud.
-* Apart from transfering files, we highly encourage you to install and use the TurboVNC software to connect to MC. Read more about your connection options at: https://github.com/SlicerMorph/Tutorials/blob/main/MorphoCloud/README.md#you-have-two-options-to-connect-to-gui
+* Apart from transfering files, we highly encourage you to install and use the free **TurboVNC** software to connect to MC. Read more about your connection options at: https://github.com/SlicerMorph/Tutorials/blob/main/MorphoCloud/README.md#you-have-two-options-to-connect-to-gui
 * For best user experience, switch to full screen mode in your browser window (not advisable if you do not have a second monitor, as you won't be able to see the zoom window).
 
 #### MorphoCloud Desktop
