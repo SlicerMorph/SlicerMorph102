@@ -2,7 +2,7 @@
 
 ### Doing semi- and pseudoLandmarking with SlicerMorph:
 * [Equidistant points on curves](https://github.com/SlicerMorph/Tutorials/blob/main/Markups_2/README.md)
-* [PlaceLandmarkGrid:](https://github.com/SlicerMorph/Tutorials/blob/main/GridBasedLandmarking/README.md)
+* [PlaceLandmarkGrid: Patch based semiLMs](https://github.com/SlicerMorph/Tutorials/blob/main/GridBasedLandmarking/README.md)
 * [PseudoLMGenerator: Generate dense point clouds from a reference model](https://github.com/SlicerMorph/Tutorials/blob/main/PseudoLMGenerator/README.md) 
 * [MergeMarkups: How to join different types of markups as a single object](https://github.com/SlicerMorph/Tutorials/tree/main/MergeMarkups)
 * [CreateSemiLMPatches: Older, triangular patch based method](https://github.com/SlicerMorph/Tutorials/blob/main/CreateSemiLMPatches/README.md)
