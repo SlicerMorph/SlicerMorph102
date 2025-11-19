@@ -12,7 +12,8 @@ Minimize your Rstudio window and let this continue. It takes anywhere from 5-10 
 
 
 ### DeCA Extension: Dense Correspondence Analysis 
-DeCA integrates biological insights in the form of homologous landmark points with dense surface registration to provide highly detailed shape analysis of smooth and complex structures that are typically challenging to analyze with sparse manual landmarks alone.
+DeCA integrates biological insights in the form of homologous landmark points with dense surface registration to provide highly detailed shape analysis of smooth and complex structures that are typically challenging to analyze with sparse manual landmarks alone.</br>
+Repository: https://github.com/SlicerMorph/SlicerDenseCorrespondenceAnalysis
 
 1. [Rolfe, S. M., Mao, D., & Maga, A. M. (2025). Streamlining Asymmetry Quantification in Fetal Mouse Imaging: A Semi-Automated Pipeline Supported by Expert Guidance. Developmental Dynamics. Early View](https://anatomypubs.onlinelibrary.wiley.com/doi/10.1002/dvdy.70028)
 2. [Rolfe, S.M., Maga, A.M. (2023). DeCA: A Dense Correspondence Analysis Toolkit for Shape Analysis. In: Wachinger, C., Paniagua, B., Elhabian, S., Li, J., Egger, J. (eds) Shape in Medical Imaging. ShapeMI 2023. Lecture Notes in Computer Science, vol 14350. Springer, Cham. https://doi.org/10.1007/978-3-031-46914-5_21](https://www.researchgate.net/publication/375111739_DeCA_A_Dense_Correspondence_Analysis_Toolkit_for_Shape_Analysis)
@@ -23,7 +24,9 @@ DeCA integrates biological insights in the form of homologous landmark points wi
   * Editing the atlas for solidfiying
   * Using the Editor to subset the pseudoLMs from the model
 ### SlicerMorphR 
-  * Various convenience functions to read/write mrk.json format into R as data matrix. 
+Provides various convenience functions to read/write mrk.json format into R and push data back and forth between geomorph and slicermorph. </br>
+Repository: https://github.com/SlicerMorph/SlicerMorphR
+Tutorial: https://github.com/SlicerMorph/Tutorials/tree/main/GPA_3
   * Reading SlicerMorph output into R using SlicerMorphR::parser2 function
   * Creating SlicerMorph output from R using SlicerMorphR::geomorph2slicermorph2 function (so that you can slide your LMs and revisualize the results in SlicerMorph)
 ### ANTsPy Template building 
