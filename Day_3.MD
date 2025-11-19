@@ -4,7 +4,7 @@
 This step takes time and we will need these functionality to do the SlicerMorphR exercises. Best is to let them running while we are learning the DeCaL module. Open the Rstudio (click the R icon on the left bar) and type this command in the R terminal (lower left:
 
 ```R
-install.packages(c("devtools", "geomorph")
+install.packages(c("devtools", "geomorph"))
 devtools::install_github("SlicerMorph/SlicerMorphR")
 ```
 
