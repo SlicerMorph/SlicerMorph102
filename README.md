@@ -54,6 +54,18 @@ curl https://jetstream2.exosphere.app/exosphere/assets/scripts/mount_ceph.py | s
 ```
 This is a one-time setup, unless the instance has to be deleted and re-created. Share will be mapped to:
 
+`/media/share/MorphoCloudCephShare` and **it will be read-only**. 
+
+For us to be able to exchange data for course related activities, you can map this temp share. Again in the terminal window, execute this command;
+```
+curl https://jetstream2.exosphere.app/exosphere/assets/scripts/mount_ceph.py | sudo python3 - mount \
+  --access-rule-name="TempShare-rw" \
+  --access-rule-key="AQCWhCJp1nOXEBAAHZQEbN/oxYOayqRdviDb7Q==" \
+  --share-path="149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/58db8084-8292-4e76-a91f-dcbb65957e9a/7cafcb4b-c646-4431-a732-bb614cd1c6fd" \
+  --share-name="TempShare"
+```
+This will create the share `/media/share/TempShare`, where everyone was write access to. However, you should continue saving your data into the your **MyData** folder (located in `/media/volume/MyData`). Things in the TempShare might get overwritten or deleted by other participants. 
+
 `/media/share/MorphoCloudCephShare`
 
 #### Data transfer between your local computer and remote instance
